@@ -1,3 +1,38 @@
 body {
     background-color: black;
+    color: white;
+    font-family: Kanit, serif;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome {
+    padding: 20vh 2vh 2vh 2vh;
+}
+
+.welcome h1, h2 {
+    font-family: Raleway, serif;
+    font-size: 5vw;
+}
+
+.find-out {
+    padding: 2vh;
+}
+
+.info-links a {
+    display: block;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .find-out {
+        padding: 20vh 2vh 2vh 2vh;
+    }
+}
+
