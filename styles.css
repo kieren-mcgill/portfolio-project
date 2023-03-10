@@ -9,6 +9,11 @@ body {
     margin: 0;
 }
 
+section {
+    display: flex;
+    padding: 0 20px;
+}
+
 /*Header section styling*/
 
 .home-btn {
@@ -28,10 +33,9 @@ body {
 }
 
 .header-section {
-    display: flex;
     flex-direction: row;
     justify-content: right;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .header-section div {
@@ -41,9 +45,7 @@ body {
 /*Hero section styling*/
 
 .hero-section {
-    display: flex;
     flex-direction: column;
-    padding: 20px;
 }
 
 .welcome h1 {
@@ -61,7 +63,7 @@ body {
     padding: 10px 0 10px 10px;
 }
 
-.find-out h2{
+h2{
     font-size: 2rem;
     padding: 15px;
 }
@@ -86,6 +88,62 @@ body {
 .info-links a:hover {
     font-size: 1.6rem;
 }
+
+/*Projects section*/
+
+.projects-section {
+    flex-direction: column;
+}
+
+.project-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0 50px;
+}
+
+.project-tile {
+    height: 200px;
+    margin: 15px;
+    width: 200px;
+}
+
+.tile-1 {
+    border-top: #5B8FB9 solid 5px;
+    border-left: #5B8FB9 solid 5px;
+    border-start-start-radius: 10px;
+    padding: 10px 0 0 10px;
+}
+
+.tile-2 {
+    border-top: #5B8FB9 solid 5px;
+    border-right: #5B8FB9 solid 5px;
+    border-start-end-radius: 10px;
+    padding: 10px 10px 0 0;
+}
+
+.project-info {
+    align-items: center;
+    background-color: #5B8FB9;
+    display: flex;
+    justify-content: center;
+}
+
+.info-1 {
+    height: 200px;
+    border-start-start-radius: 5px;
+    width: 200px;
+}
+
+.info-2 {
+    height: 200px;
+    border-start-end-radius: 5px;
+    width: 200px;
+}
+
+
 
 /*Media queries and responsiveness*/
 
