@@ -11,7 +11,7 @@ body {
 
 section {
     display: flex;
-    padding: 0 20px;
+    padding: 0 25px;
 }
 
 /*Header section styling*/
@@ -59,7 +59,7 @@ section {
     border-bottom: #5B8FB9 solid 5px;
     border-left: #5B8FB9 solid 5px;
     border-end-start-radius: 10px;
-    margin: 0 10px 0 0;
+    margin: 0;
     padding: 10px 0 10px 10px;
 }
 
@@ -74,7 +74,7 @@ h2{
     border-start-end-radius: 10px;
     display: flex;
     flex-direction: column;
-    margin: 0 10px 0 0;
+    margin: 0;
     padding: 10px 0 10px 15px;
 }
 
@@ -96,18 +96,19 @@ h2{
 }
 
 .project-container {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
-    padding: 0 50px;
+    padding: 0;
 }
 
 .project-tile {
-    height: 200px;
+    height: auto;
     margin: 15px;
-    width: 200px;
+    width: 320px;
+    /*transition: all 0.5s;*/
 }
 
 .tile-1 {
@@ -128,19 +129,48 @@ h2{
     align-items: center;
     background-color: #5B8FB9;
     display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    transition: height 0.5s, background-color 0.5s;
+}
+
+.project-info:hover {
+    height: 300px;
+    background-color: #B6EADA;
+    color: #301E67;
     justify-content: center;
 }
 
 .info-1 {
-    height: 200px;
     border-start-start-radius: 5px;
-    width: 200px;
+    width: auto;
 }
 
 .info-2 {
-    height: 200px;
     border-start-end-radius: 5px;
-    width: 200px;
+    width: auto;
+}
+
+.project-blurb {
+    display:none;
+}
+
+.project-info:hover .project-blurb {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-link {
+    color: #301E67;
+    margin: 0 10px;
+    transition: all 0.2s;
+}
+
+.project-link:hover {
+    transform: scale(1.2);
 }
 
 
