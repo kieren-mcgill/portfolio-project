@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #03001C;
     color: #B6EADA;
@@ -8,18 +12,22 @@ body {
 /*Header section styling*/
 
 .home-btn {
-    color: #5B8FB9;
     margin: 20px;
     position: fixed;
-    transition: color 2s;
+
 }
 
-.home-btn:hover {
-    color: aliceblue;
+.action-btn {
+    color: #5B8FB9;
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    color: #B6EADA;
+    transform: scale(1.2);
 }
 
 .header-section {
-    color: #5B8FB9;
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -46,8 +54,6 @@ body {
 }
 
 .welcome p {
-    animation: fadeIn 3s;
-    animation-delay: 0.6s;
     border-bottom: #5B8FB9 solid 5px;
     border-left: #5B8FB9 solid 5px;
     border-end-start-radius: 10px;
@@ -56,15 +62,11 @@ body {
 }
 
 .find-out h2{
-    animation: fadeIn 3s;
-    animation-delay: 0.6s;
     font-size: 2rem;
     padding: 15px;
 }
 
 .info-links {
-    animation: fadeIn 3s;
-    animation-delay: 0.6s;
     border-top: #5B8FB9 solid 5px;
     border-right: #5B8FB9 solid 5px;
     border-start-end-radius: 10px;
@@ -78,11 +80,11 @@ body {
     color: #B6EADA;
     font-size: 1.5rem;
     padding: 5px 0;
-    transition: font-size 0.5s;
+    transition: all 0.2s;
 }
 
 .info-links a:hover {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
 }
 
 /*Media queries and responsiveness*/
