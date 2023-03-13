@@ -13,11 +13,12 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 0 25px;
 }
 
-section:not(.header-section) {
+.purple-section {
+    background-color: #301E67;
     min-height: 100vh;
 }
 
@@ -41,6 +42,11 @@ li {
 h1, h2, h3 {
     font-family: 'Work sans', sans-serif;
     font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    color: #B6EADA;
 }
 
 h2{
@@ -87,6 +93,9 @@ h2{
 
 .header-and-hero {
     height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hero-section {
@@ -110,11 +119,9 @@ h2{
 }
 
 .info-links a {
-    color: #B6EADA;
     font-size: 1.5rem;
     padding: 5px 0;
     transition: all 0.2s;
-    text-decoration: none;
 }
 
 .info-links a:hover {
@@ -123,9 +130,7 @@ h2{
 
 /*Projects section styling*/
 
-.projects-section {
-    background-color: #301E67;
-}
+
 
 .project-container {
     align-items: flex-start;
@@ -133,6 +138,7 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
+    min-height: 100vh;
     padding: 0;
 }
 
@@ -249,9 +255,12 @@ h2{
     padding: 10px;
 }
 
+/*Contact section*/
 
-
-
+.contact-buttons {
+    display:flex;
+    flex-direction: column;
+}
 
 
 /*Media queries and responsiveness*/
