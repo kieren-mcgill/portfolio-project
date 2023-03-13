@@ -16,58 +16,65 @@
 <!--Header Section-->
 
 <a class="home-btn" href="#"><i class="fa-solid fa-circle-chevron-up fa-2xl action-btn"></i></a>
-<section class="header-section">
-    <div>
-        <a href="mailto:kacmcgill@gmail.com" target="_blank" rel="noopener noreferrer">
-        <i class="fa-regular fa-envelope fa-2xl action-btn"></i>
-        </a>
-    </div>
-    <div>
-        <a href="https://github.com/kieren-mcgill" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-github fa-2xl action-btn"></i>
-        </a>
-    </div>
-    <div>
-        <a href="https://linkedin.com/in/kieren-mcgill-b88a14179" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin fa-2xl action-btn"></i>
-        </a>
-    </div>
-</section>
-<section class="hero-section">
-    <div class="welcome">
-        <h1>Hi there.</h1>
-        <div class="info-blurb">
-            <p>My name is Kieren McGill, and I am a software developer based in Sheffield UK.
-                I have created a number of front and back-end applications using MERN stack technologies.
-            </p>
+<div class="header-and-hero">
+    <section class="header-section">
+        <div>
+            <a href="mailto:kacmcgill@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-regular fa-envelope fa-2xl action-btn"></i>
+            </a>
         </div>
-
-    </div>
-    <div class="find-out">
-        <h2>Find out more...</h2>
-        <div class="info-links">
-            <div><a href="#projects-section">Projects </a><span>   →</span></div>
-            <div><a href="">Experience</a><span>   →</span></div>
-            <div><a href="">Contact</a><span>   →</span></div>
+        <div>
+            <a href="https://github.com/kieren-mcgill" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github fa-2xl action-btn"></i>
+            </a>
         </div>
+        <div>
+            <a href="https://linkedin.com/in/kieren-mcgill-b88a14179" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin fa-2xl action-btn"></i>
+            </a>
+        </div>
+    </section>
+    <section class="hero-section">
+        <div class="welcome">
+            <h1>Hi there.</h1>
+            <div class="info-blurb">
+                <p class="text-section">My name is Kieren McGill, and I am a software developer based in Sheffield UK.
+                    I have created a number of front and back-end applications using MERN stack technologies.
+                </p>
+            </div>
 
-    </div>
-</section>
+        </div>
+        <div class="find-out">
+            <h2>Find out more...</h2>
+            <div class="info-links">
+                <div>
+                    <a href="#projects-section">Projects </a><span>   →</span>
+                </div>
+                <div>
+                    <a href="#about-section">About me</a><span>   →</span>
+                </div>
+                <div>
+                    <a href="">Contact</a><span>   →</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
 
 <!--Projects Section-->
 
 <section class="projects-section" id="projects-section">
     <h2>Projects</h2>
     <div class="project-container">
-        <div class="project-tile tile-1">
+        <div class="tile tile-1">
             <div class="project-info info-1">
                 <h2>Portfolio Project</h2>
                 <div class="project-blurb">
                     <div class="tech-icons">
                         <i class="fa-brands fa-html5 fa-lg"></i>
                         <i class="fa-brands fa-css3-alt fa-lg"></i>
-<!--                        <i class="fa-brands fa-square-js fa-lg"></i>-->
-<!--                        <i class="fa-brands fa-react" fa-lg></i>-->
                     </div>
                     <p>A portfolio for my projects, created using vanilla HTML and CSS, and following a 'mobile first' design philosophy.<p/>
                     <div>
@@ -81,7 +88,7 @@
                 </div>
             </div>
         </div>
-        <div class="project-tile tile-2">
+        <div class="tile tile-2">
             <div class="project-info info-2">
                 <h2>Rugby Score Card</h2>
                 <div class="project-blurb">
@@ -89,7 +96,6 @@
                         <i class="fa-brands fa-html5 fa-lg"></i>
                         <i class="fa-brands fa-css3-alt fa-lg"></i>
                         <i class="fa-brands fa-square-js fa-lg"></i>
-<!--                        <i class="fa-brands fa-react" fa-lg></i>-->
                     </div>
                     <p>A simple score card or score board to keep track of the points in a rugby game, using vanilla JavaScript.<p/>
                     <div>
@@ -103,7 +109,7 @@
                 </div>
             </div>
         </div>
-        <div class="project-tile tile-1">
+        <div class="tile tile-1">
             <div class="project-info info-1">
                 <h2>Coming soon...</h2>
                 <div class="project-blurb">
@@ -125,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <div class="project-tile tile-2">
+        <div class="tile tile-2">
             <div class="project-info info-2">
                 <h2>Coming soon...</h2>
                 <div class="project-blurb">
@@ -150,9 +156,60 @@
     </div>
 </section>
 
-<!--Experience Section-->
+<!--About me Section-->
 
+<section class="about-section" id="about-section">
+    <h2>About me</h2>
+        <p class="text-section">
+            <img class="km-portrait" src="images/km-portrait.JPG" alt="A portrait photo of Kieren McGill" />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis pretium placerat. Mauris efficitur, ipsum quis faucibus consequat, elit ipsum pharetra neque, sit amet sodales lacus urna eget libero. Cras efficitur nibh tellus, et pellentesque nibh venenatis in. Nunc nisl odio, tincidunt a cursus ac, fringilla at eros. Vivamus at condimentum metus. Integer egestas sagittis sapien, dictum bibendum metus luctus ut. Fusce ornare sodales neque id vulputate. Aliquam imperdiet vitae ante non varius.
+        </p>
+    <h2>Skills</h2>
+    <div class="skills-subsection">
+        <div class="skills-tile">
+            <h3>Coding</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Git</li>
+            </ul>
+        </div>
+        <div class="skills-tile">
+            <h3>Soft</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Git</li>
+            </ul>
+        </div>
+        </div>
+    <h2>Certificates</h2>
+        <div class="cert-subsection">
+            <div class="cert-sub-sub">
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-free-code-camp fa-2xl"></i>
+                        Responsive Web Design
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-free-code-camp fa-2xl"></i>
+                        Javascript Data Structures and Algorithms
+                    </li>
+                </ul>
+            </div>
+            <div class="cert-sub-sub">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-code fa-2xl"></i>
+                        Learn the Command Line
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-
+</section>
 </body>
 </html>
