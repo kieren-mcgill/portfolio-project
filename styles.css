@@ -6,6 +6,7 @@ body {
     background-color: #03001C;
     color: #B6EADA;
     font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
     margin: 0;
 }
 
@@ -14,12 +15,13 @@ section {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    padding: 0 38px ;
+    padding: 0 45px 0 20px ;
 }
 
 .purple-section {
     background-color: #301E67;
     min-height: 100vh;
+
 }
 
 .tile {
@@ -36,7 +38,7 @@ ul {
 }
 
 li {
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 h1, h2, h3 {
@@ -75,8 +77,9 @@ h2{
 /*Header section styling*/
 
 .home-btn {
-    margin: 15px;
+    margin: 25px 15px;
     position: fixed;
+    font-size: 1.5em;
 }
 
 .nav-text {
@@ -108,6 +111,7 @@ h2{
 
 .hero-section {
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .welcome h1 {
@@ -138,15 +142,19 @@ h2{
 
 /*Projects section styling*/
 
-
+.project-section {
+    background-color: #301E67;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
 
 .project-container {
     align-items: flex-start;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
-    min-height: 100vh;
+    justify-content: center;
     padding: 0;
 }
 
@@ -176,7 +184,7 @@ h2{
 }
 
 .project-info:hover {
-    height: 320px;
+    height: 400px;
     background-color: #B6EADA;
     color: #301E67;
     justify-content: center;
@@ -240,17 +248,32 @@ h2{
 .skills-subsection {
     display: flex;
     flex-direction: row;
+    width: 100%
 }
 
 .skills-tile {
     height: auto;
     margin: 15px;
+    width: 50%;
     border-top: #5B8FB9 solid 5px;
     border-left: #5B8FB9 solid 5px;
     border-right: #5B8FB9 solid 5px;
     border-start-start-radius: 10px;
     border-start-end-radius: 10px;
-    padding: 10px 0 0 10px;
+}
+
+.coding-skill {
+    margin-left: 0;
+}
+
+.soft-skill {
+    margin-right: 0
+}
+
+.skills-tile h2 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
 }
 
 .cert-subsection {
@@ -259,11 +282,38 @@ h2{
     border-end-end-radius: 10px;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0 0 50px 0;
     padding: 10px;
 }
 
+.cert-sub-sub {
+    display:flex;
+    flex-direction: column;
+}
+
+.cert-sub-sub a {
+    padding: 5px;
+}
+
+.cv {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 /*Contact section*/
+
+.contact-section {
+    background-color: #301E67;
+    min-height: 100vh;
+}
+
+.contact-info {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 .contact-button {
     display:flex;
@@ -288,6 +338,10 @@ h2{
     align-items: center;
     align-self: center;
     justify-content: center;
+}
+
+.contact-footer p {
+    padding-top: 15px;
 }
 
 form {
