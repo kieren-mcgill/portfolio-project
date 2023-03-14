@@ -56,9 +56,11 @@ a {
     transition: all 0.2s;
 }
 
-.action-btn:hover {
-    color: #B6EADA;
-    transform: scale(1.2);
+@media (hover: hover) {
+    .action-btn:hover {
+        color: #B6EADA;
+        transform: scale(1.2);
+    }
 }
 
 h2{
@@ -71,7 +73,7 @@ h2{
     border-left: #5B8FB9 solid 5px;
     border-end-start-radius: 10px;
     margin: 0;
-    padding: 10px 0 10px 10px;
+    padding: 0 0 10px 10px;
 }
 
 /*Header section styling*/
@@ -136,15 +138,17 @@ h2{
     transition: all 0.2s;
 }
 
-.info-links a:hover {
-    font-size: 1.6rem;
+@media (hover: hover) {
+    .info-links a:hover {
+        font-size: 1.6rem;
+    }
 }
 
 /*Projects section styling*/
 
 .project-section {
     background-color: #301E67;
-    min-height: 100vh;
+    min-height: 75vh;
     justify-content: flex-start;
 }
 
@@ -183,11 +187,13 @@ h2{
     transition: height 0.5s, background-color 0.5s;
 }
 
-.project-info:hover {
-    height: 400px;
-    background-color: #B6EADA;
-    color: #301E67;
-    justify-content: center;
+@media (hover: hover) {
+    .project-info:hover {
+        height: 400px;
+        background-color: #B6EADA;
+        color: #301E67;
+        justify-content: center;
+    }
 }
 
 .info-1 {
@@ -204,12 +210,14 @@ h2{
     display:none;
 }
 
-.project-info:hover .project-blurb {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+@media (hover: hover) {
+    .project-info:hover .project-blurb {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
 }
 
 .project-link {
@@ -218,8 +226,10 @@ h2{
     transition: all 0.2s;
 }
 
-.project-link:hover {
-    transform: scale(1.2);
+@media (hover: hover) {
+    .project-link:hover {
+        transform: scale(1.2);
+    }
 }
 
 .project-info h2 {
@@ -228,8 +238,8 @@ h2{
 
 /*About me section*/
 
-.text-section {
-    padding-top: 0;
+.about-section  .text-section {
+    align-self: center;
 }
 
 .km-portrait {
@@ -247,14 +257,16 @@ h2{
 
 .skills-subsection {
     display: flex;
+    align-self: center;
     flex-direction: row;
-    width: 100%
+    width: 100%;
 }
 
 .skills-tile {
     height: auto;
     margin: 15px;
     width: 50%;
+    max-width: 250px;
     border-top: #5B8FB9 solid 5px;
     border-left: #5B8FB9 solid 5px;
     border-right: #5B8FB9 solid 5px;
@@ -276,6 +288,19 @@ h2{
     text-align: center;
 }
 
+.certs-cv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.certs {
+    display: flex;
+    flex-direction: column;
+}
+
 .cert-subsection {
     border-bottom: #5B8FB9 solid 5px;
     border-right: #5B8FB9 solid 5px;
@@ -283,7 +308,7 @@ h2{
     display: flex;
     flex-direction: column;
     margin: 0 0 50px 0;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .cert-sub-sub {
@@ -298,21 +323,29 @@ h2{
 .cv {
     display:flex;
     flex-direction: row;
-    align-items: center;
+}
+
+.cv i {
+    justify-self: center;
 }
 
 /*Contact section*/
 
 .contact-section {
     background-color: #301E67;
-    min-height: 100vh;
+    min-height: 75vh;
 }
 
 .contact-info {
     align-self: center;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form {
+    min-width: 300px;
 }
 
 .contact-button {
@@ -338,6 +371,7 @@ h2{
     align-items: center;
     align-self: center;
     justify-content: center;
+    width: 100vw;
 }
 
 .contact-footer p {
@@ -372,6 +406,36 @@ button {
 
 
 /*Media queries and responsiveness*/
+
+/*Ipad screen size*/
+@media screen and (min-width:760px) {
+    .text-section, li {
+        font-size: 1.5em;
+    }
+    .hero-section {
+        justify-content: space-evenly;
+    }
+    .text-section, .skills-subsection, .certs-cv {
+        width: 75%;
+    }
+    .find-out {
+        width: 50%;
+        align-self: flex-end;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (min-width: 1015px) {
+    .hero-section {
+        flex-direction: row;
+    }
+    .welcome {
+        width: 50%;
+        align-self: flex-start;
+    }
+}
+
+
 
 @keyframes fadeIn {
     0% { opacity: 0; }
