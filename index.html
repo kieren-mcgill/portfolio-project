@@ -16,6 +16,11 @@
 <!--Header Section-->
 
 <a class="home-btn" href="#"><i class="fa-solid fa-circle-chevron-up fa-2xl action-btn"></i></a>
+<div class="nav-text">
+    <a href="#projects-section" class="action-btn">Projects </a><span>   →</span>
+    <a href="#about-section" class="action-btn">About me</a><span>   →</span>
+    <a href="#contact-section" class="action-btn">Contact</a><span>   →</span>
+</div>
 <div class="header-and-hero">
     <section class="header-section">
         <div>
@@ -216,26 +221,32 @@
 <section class="purple-section" id="contact-section">
     <h2>Contact</h2>
     <div class="contact-info">
-        <div class="contact-buttons">
-            <a href="mailto:kacmcgill@gmail.com" target="_blank" rel="noopener noreferrer">
+        <div class="contact-button">
+            <p>
                 <i class="fa-solid fa-mobile-screen fa-2xl"></i><span> : +44(0)7542 699 439</span>
-            </a>
+            </p>
             <a href="mailto:kacmcgill@gmail.com" target="_blank" rel="noopener noreferrer">
                 <i class="fa-regular fa-envelope fa-2xl action-btn"></i><span> : kacmcgill@gmail.com</span>
             </a>
             <a href="https://linkedin.com/in/kieren-mcgill-b88a14179" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin fa-2xl action-btn"></i><span> : www.linkedin.com/in/kieren-mcgill</span>
+                <i class="fa-brands fa-linkedin fa-2xl action-btn"></i><span> : linkedin.com/in/kieren-mcgill</span>
             </a>
             <a href="https://twitter.com/KierenMcGill" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-twitter fa-2xl action-btn"></i><span> : @KierenMcGill</span>
             </a>
         </div>
-        <div class="contact-form">
-
-        </div>
-        <div class="contact-footer">
-            <p>Created by Kieren McGill 2023</p>
-        </div>
+            <form action="mailto:kacmcgill@gmail.com">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Write you name here...">
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" placeholder="Your email...">
+                <label for="message">How can I help?</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." style="height:150px"></textarea>
+                <button class="action-btn" type="submit" value="Submit"><i class="fa-solid fa-paper-plane fa-2xl"></i></button>
+            </form>
+    </div>
+    <div class="contact-footer">
+        <p>Created by Kieren McGill 2023</p>
     </div>
 </section>
 </body>
