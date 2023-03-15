@@ -40,7 +40,7 @@ li {
 
 h1, h2, h3 {
     font-family: 'Work sans', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 a {
@@ -85,10 +85,15 @@ h2{
 
 .nav-text {
     border-left: #5B8FB9 solid 5px;
+    font-size: 1.2em;
     writing-mode: vertical-rl;
     position: fixed;
     right: 0;
-    padding: 10px 5px 0 ;
+    padding: 10px 5px 0;
+}
+
+.nav-text a {
+    color: #B6EADA;
 }
 
 .header-section {
