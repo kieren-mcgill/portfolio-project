@@ -3,25 +3,22 @@ html {
 }
 
 body {
-    background-color: #03001C;
+    background-image: url("images/dev-background.jpeg");
+    background-attachment: fixed;
     color: #B6EADA;
     font-family: 'Poppins', sans-serif;
     font-size: 0.8em;
+    font-weight: 200;
     margin: 0;
 }
 
 section {
+    background-color: rgb(3, 0, 28, 0.88);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
     padding: 0 45px 0 20px ;
-}
-
-.purple-section {
-    background-color: #301E67;
-    min-height: 100vh;
-
 }
 
 .tile {
@@ -74,6 +71,8 @@ h2{
     border-end-start-radius: 10px;
     margin: 0;
     padding: 0 0 10px 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /*Header section styling*/
@@ -118,8 +117,26 @@ h2{
 
 .welcome h1 {
     animation: fadeIn 3.6s;
-    font-size: 4rem;
+    margin: 60px 0;
+    font-size: 5.5rem;
     padding-left: 15px;
+}
+
+.cursor {
+    animation: cursor-blink 1.2s steps(2) infinite;
+}
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
+}
+
+.text-section span {
+    font-family: "Work sans", sans-serif;
+    font-weight: 200;
+    font-size: 1.75em;
+    color: #5B8FB9;
 }
 
 .info-links {
@@ -147,7 +164,7 @@ h2{
 /*Projects section styling*/
 
 .project-section {
-    background-color: #301E67;
+    background-color: rgb(48, 30, 103);
     min-height: 75vh;
     justify-content: flex-start;
 }
@@ -220,6 +237,11 @@ h2{
     }
 }
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 .project-link {
     color: #301E67;
     margin: 0 10px;
@@ -253,6 +275,7 @@ h2{
     float: right;
     top: 0;
     right: 0;
+    margin-left: 10px;
 }
 
 .skills-subsection {
@@ -269,9 +292,8 @@ h2{
     max-width: 250px;
     border-top: #5B8FB9 solid 5px;
     border-left: #5B8FB9 solid 5px;
-    border-right: #5B8FB9 solid 5px;
     border-start-start-radius: 10px;
-    border-start-end-radius: 10px;
+
 }
 
 .coding-skill {
@@ -296,29 +318,29 @@ h2{
 
 }
 
-.certs {
-    display: flex;
-    flex-direction: column;
-}
+/*.certs {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
-.cert-subsection {
-    border-bottom: #5B8FB9 solid 5px;
-    border-right: #5B8FB9 solid 5px;
-    border-end-end-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 50px 0;
-    padding: 0 10px;
-}
+/*.cert-subsection {*/
+/*    border-bottom: #5B8FB9 solid 5px;*/
+/*    border-right: #5B8FB9 solid 5px;*/
+/*    border-end-end-radius: 10px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    margin: 0 0 50px 0;*/
+/*    padding: 0 10px;*/
+/*}*/
 
-.cert-sub-sub {
-    display:flex;
-    flex-direction: column;
-}
+/*.cert-sub-sub {*/
+/*    display:flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
-.cert-sub-sub a {
-    padding: 5px;
-}
+/*.cert-sub-sub a {*/
+/*    padding: 5px;*/
+/*}*/
 
 .cv {
     display:flex;
@@ -332,7 +354,7 @@ h2{
 /*Contact section*/
 
 .contact-section {
-    background-color: #301E67;
+    background-color: rgb(48, 30, 103);
     min-height: 75vh;
 }
 
@@ -410,7 +432,7 @@ button {
 /*Ipad screen size*/
 @media screen and (min-width:760px) {
     .text-section, li {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     .hero-section {
         justify-content: space-evenly;
@@ -435,10 +457,9 @@ button {
     }
 }
 
-
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+@media screen and (min-width:1400px) {
+    .text-section, li {
+        font-size: 1.5em;
+    }
 }
 
