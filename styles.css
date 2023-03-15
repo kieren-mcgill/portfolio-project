@@ -13,7 +13,7 @@ body {
 }
 
 section {
-    background-color: rgb(3, 0, 28, 0.88);
+    background-color: rgb(3, 0, 28, 0.85);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -260,7 +260,7 @@ h2{
 
 /*About me section*/
 
-.about-section  .text-section {
+.text-section {
     align-self: center;
 }
 
@@ -278,69 +278,27 @@ h2{
     margin-left: 10px;
 }
 
-.skills-subsection {
-    display: flex;
-    align-self: center;
-    flex-direction: row;
-    width: 100%;
-}
-
 .skills-tile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     height: auto;
-    margin: 15px;
-    width: 50%;
-    max-width: 250px;
+    width: 100%;
     border-top: #5B8FB9 solid 5px;
     border-left: #5B8FB9 solid 5px;
     border-start-start-radius: 10px;
-
 }
 
-.coding-skill {
-    margin-left: 0;
+.skills-list {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
 }
 
-.soft-skill {
-    margin-right: 0
-}
-
-.skills-tile h2 {
-    margin: 0;
-    font-size: 2em;
+.skills-list p {
+    margin: 5px;
     text-align: center;
 }
-
-.certs-cv {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-/*.certs {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
-
-/*.cert-subsection {*/
-/*    border-bottom: #5B8FB9 solid 5px;*/
-/*    border-right: #5B8FB9 solid 5px;*/
-/*    border-end-end-radius: 10px;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    margin: 0 0 50px 0;*/
-/*    padding: 0 10px;*/
-/*}*/
-
-/*.cert-sub-sub {*/
-/*    display:flex;*/
-/*    flex-direction: column;*/
-/*}*/
-
-/*.cert-sub-sub a {*/
-/*    padding: 5px;*/
-/*}*/
 
 .cv {
     display:flex;
@@ -431,14 +389,18 @@ button {
 
 /*Ipad screen size*/
 @media screen and (min-width:760px) {
-    .text-section, li {
+    .text-section, li, p {
         font-size: 1.2em;
     }
     .hero-section {
         justify-content: space-evenly;
     }
-    .text-section, .skills-subsection, .certs-cv {
+    .text-section, .skills-subsection, .skills-tile {
         width: 75%;
+    }
+    .skills-tile {
+        align-self: center;
+        min-width: 75%;
     }
     .find-out {
         width: 50%;
