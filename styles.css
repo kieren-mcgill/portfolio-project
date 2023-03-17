@@ -209,14 +209,13 @@ h2{
     transition: height 0.5s, background-color 0.5s;
 }
 
-@media (hover: hover) {
-    .project-info:hover {
+
+    .active {
         height: 400px;
         background-color: #B6EADA;
         color: #301E67;
         justify-content: center;
     }
-}
 
 .info-1 {
     border-start-start-radius: 5px;
@@ -232,15 +231,15 @@ h2{
     display:none;
 }
 
-@media (hover: hover) {
-    .project-info:hover .project-blurb {
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    }
-}
+/*@media (hover: hover) {*/
+/*    .project-info:hover .project-blurb {*/
+/*        align-items: center;*/
+/*        justify-content: center;*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        padding: 10px;*/
+/*    }*/
+/*}*/
 
 @keyframes fadeIn {
     0% { opacity: 0; }
