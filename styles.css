@@ -1,11 +1,20 @@
-html {
+:root {
     scroll-behavior: smooth;
+    --main-font-color: #F9F5EB;
+    --main-bg-color: rgb(0, 43, 91, 0.90);
+}
+
+/*Light/dark theme*/
+
+.light-theme {
+    --main-font-color: rgb(0, 43, 91);
+    --main-bg-color: rgb(249, 245, 235, 0.9);
 }
 
 body {
     background-image: url("images/dev-background.jpeg");
     background-attachment: fixed;
-    color: #B6EADA;
+    color: var(--main-font-color);
     font-family: 'Poppins', sans-serif;
     font-size: 0.8em;
     font-weight: 200;
@@ -13,7 +22,8 @@ body {
 }
 
 section {
-    background-color: rgb(3, 0, 28, 0.85);
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -169,7 +179,7 @@ h2{
 /*Projects section styling*/
 
 .project-section {
-    background-color: rgb(48, 30, 103);
+    background-color: var(--main-bg-color);
     min-height: 75vh;
     justify-content: flex-start;
 }
@@ -316,7 +326,7 @@ h2{
 /*Contact section*/
 
 .contact-section {
-    background-color: rgb(48, 30, 103);
+    background-color: var(--main-bg-color);
     min-height: 75vh;
 }
 

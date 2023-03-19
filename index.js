@@ -6,3 +6,7 @@ for (let i=0; i <= accordion.length; i++) {
         accord.classList.toggle('active')
     })
 }
+
+//Light dark theme
+
+
